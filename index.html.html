@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Verificacion de datos MINCIT - Ministerio de Comercio, Industria y Turismo</title>
+  <style>
+    body {
+     background-color: #fff;
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      margin: 0;
+    }
+
+    .banner {
+      width: 100%;
+      height: auto;
+    }
+
+   .formulario-container {
+      background-color: #8f0933;
+      padding: 30px;
+      max-width: 700px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #fff;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+    }
+
+    button {
+      background-color: #fff;
+      color: black;
+      padding: 13px;
+      border: none;
+      width: 100%;
+      border-radius: 5px;
+      font-size: 16px;
+      margin-top: 30px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #fff;
+    }
+
+    .section-title {
+      margin-top: 30px;
+      font-size: 18px;
+      color: #fff;
+    }
+
+    .mensaje-final {
+      display: none;
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      color: #d9534f;
+      margin-top: 100px;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="banner superior.png" class="banner">
+
+  <div class="formulario-container" id="formulario">
+    <h2>Verificacion de datos MINCIT - Ministerio de Comercio, Industria y Turismo</h2>
+    <form id="formSimulacro">
+      <label>Nombre de la empresa</label>
+      <input type="text" required>
+      <label>Dirección</label>
+      <input type="text" required>
+      <label>Contacto</label>
+      <input type="text" required>
+
+      <div class="section-title">Proveedor 1</div>
+      <label>Nombre del proveedor</label>
+      <input type="text">
+      <label>Dirección</label>
+      <input type="text">
+      <label>Teléfono</label>
+      <input type="tel">
+      <label>Correo electrónico</label>
+      <input type="email">
+
+      <div class="section-title">Proveedor 2</div>
+      <label>Nombre del proveedor</label>
+      <input type="text">
+      <label>Dirección</label>
+      <input type="text">
+      <label>Teléfono</label>
+      <input type="tel">
+      <label>Correo electrónico</label>
+      <input type="email">
+
+      <div class="section-title">Proveedor 3</div>
+      <label>Nombre del proveedor</label>
+      <input type="text">
+      <label>Dirección</label>
+      <input type="text">
+      <label>Teléfono</label>
+      <input type="tel">
+      <label>Correo electrónico</label>
+      <input type="email">
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <div class="mensaje-final" id="mensajeFinal">
+    ¡EJECUCION DE SIMULACRO DE CIBER SEGURIDAD!
+  </div>
+
+  <img src="banner inferior.png" alt="Banner Inferior" class="banner">
+
+  <script>
+    document.getElementById("formSimulacro").addEventListener("submit", function(event) {
+      event.preventDefault();
+      document.getElementById("formulario").style.display = "none";
+      document.getElementById("mensajeFinal").style.display = "block";
+    });
+  </script>
+
+</body>
+</html>
